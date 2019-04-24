@@ -22,7 +22,7 @@
         font-size: inherit;
         background-color: var(--color-grey-light-2);
         border: none;
-        padding: .7rem 2rem;
+        padding: .85rem 2rem;
         border-radius: 10rem;
         width: 90%;
         transition: all .2s;
@@ -63,6 +63,7 @@
         fill: var(--color-grey-dark-3);
     }
 }
+
 
 // ---------------------------------------
 // USER NAVIGATION
@@ -197,4 +198,106 @@
     color: var(--color-grey-light-4);
     text-align: center;
     padding: 2.5rem;
+}
+
+
+// ---------------------------------------
+// GALLERY
+// ---------------------------------------
+.gallery {
+    display: flex;
+
+    &__photo {
+        width: 100%;
+        display: block;
+    }
+}
+
+
+// ---------------------------------------
+// OVERVIEW
+// ---------------------------------------
+.overview {
+    display: flex;
+    background-color: var(--color-white);
+    border-bottom: 1px solid var(--color-grey-light-2);
+    align-items: center;
+
+    &__heading {
+        font-size: 2.25rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding: 1.5rem 3rem;
+    }
+
+    &__stars {
+        margin-right: auto;
+        display: flex;
+    }
+
+    &__icon-star,
+    &__icon-location {
+        width: 1.75rem;
+        height: 1.75rem;
+        fill: var(--color-primary);
+    }
+
+    &__location {
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+    }
+
+    &__icon-location {
+        margin-right: .5rem;
+    }
+
+    &__rating {
+        background-color: var(--color-primary);
+        margin-left: 3rem;
+        padding: 0 2.25rem;
+        color: var(--color-white);
+        align-self: stretch;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__rating-average {
+        font-size: 2.25rem;
+        font-weight: 300;
+        margin-bottom: -3px;
+    }
+
+    &__rating-count {
+        font-size: .8rem;
+        text-transform: uppercase;
+    }
+}
+
+
+// ---------------------------------------
+// BUTTON INLINE
+// ---------------------------------------
+.btn-inline {
+    font-size: inherit;
+    border: none;
+    color: var(--color-primary);
+    border-bottom: 1px solid currentColor;
+    padding-bottom: 2px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all .2s; 
+
+    &:hover {
+        color: var(--color-grey-dark-1);
+    }
+
+    &:focus {
+        outline: 0;
+        animation: pulsate 1s infinite;
+    }
 }
