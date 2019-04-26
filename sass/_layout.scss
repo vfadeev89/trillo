@@ -35,24 +35,25 @@
 }
 
 .detail {
+    font-size: 1.4rem;
     display: flex;
     padding: 4.5rem;
     border-bottom: var(--line);
 }
 
-.description,
-.user-reviews {
-    background-color: var(--color-white);
-    padding: 3rem;
-    box-shadow: var(--shadow-light);
-    font-size: 1.4rem;
-}
-
 .description {
     flex: 0 0 60%;
     margin-right: 4.5rem;
+
+    background-color: var(--color-white);
+    padding: 3rem;
+    box-shadow: var(--shadow-light);
 }
 
 .user-reviews {
     flex: auto; // or 1
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
